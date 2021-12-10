@@ -1,0 +1,71 @@
+/* notosans KR 폰트 */
+@font-face {
+  font-family: 'NotoSansKR';
+  src : local(※),
+        url('../../font/NotoSans-Light.otf'),
+        url('../../font/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../font/NotoSans-Light.woff') format('woff'),
+        url('../../font/NotoSans-Light.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  src : local(※),
+        url('../../font/NotoSans-Regular.otf'),
+        url('../../font/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../font/NotoSans-Regular.woff') format('woff'),
+        url('../../font/NotoSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  src : local(※),
+        url('../../font/NotoSans-Medium.otf'),
+        url('../../font/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../font/NotoSans-Medium.woff') format('woff'),
+        url('../../font/NotoSans-Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  src : local(※),
+        url('../../font/NotoSans-Bold.otf'),
+        url('../../font/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../font/NotoSans-Bold.woff') format('woff'),
+        url('../../font/NotoSans-Bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+} 
+
+//  바디프랜드 폰트
+@font-face {
+  font-family: 'Bodyfriend-B';
+  src : local(※),
+        url('../../font/Bodyfriend-B.otf'),
+        url('../../font/Bodyfriend-B.woff') format('woff'),
+        url('../../font/Bodyfriend-B.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bodyfriend-M';
+  src : local(※),
+        url('../../font/Bodyfriend-M.otf'),
+        url('../../font/Bodyfriend-M.woff') format('woff'),
+        url('../../font/Bodyfriend-M.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bodyfriend-L';
+  src : local(※),
+        url('../../font/Bodyfriend-L.otf'),
+        url('../../font/Bodyfriend-L.woff') format('woff'),
+        url('../../font/Bodyfriend-L.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}

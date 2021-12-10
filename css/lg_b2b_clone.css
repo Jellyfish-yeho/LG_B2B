@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "NotoSansKR", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", "맑은 고딕", "Malgun Gothic", sans-serif;
+}
+
+body {
+  font-family: "NotoSansKR", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", "맑은 고딕", "Malgun Gothic", sans-serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* notosans KR 폰트 */
+@font-face {
+  font-family: 'NotoSansKR';
+  src: local(※), url("../../font/NotoSans-Light.otf"), url("../../font/NotoSans-Light.eot?#iefix") format("embedded-opentype"), url("../../font/NotoSans-Light.woff") format("woff"), url("../../font/NotoSans-Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: local(※), url("../../font/NotoSans-Regular.otf"), url("../../font/NotoSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../font/NotoSans-Regular.woff") format("woff"), url("../../font/NotoSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: local(※), url("../../font/NotoSans-Medium.otf"), url("../../font/NotoSans-Medium.eot?#iefix") format("embedded-opentype"), url("../../font/NotoSans-Medium.woff") format("woff"), url("../../font/NotoSans-Medium.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: local(※), url("../../font/NotoSans-Bold.otf"), url("../../font/NotoSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../font/NotoSans-Bold.woff") format("woff"), url("../../font/NotoSans-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodyfriend-B';
+  src: local(※), url("../../font/Bodyfriend-B.otf"), url("../../font/Bodyfriend-B.woff") format("woff"), url("../../font/Bodyfriend-B.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodyfriend-M';
+  src: local(※), url("../../font/Bodyfriend-M.otf"), url("../../font/Bodyfriend-M.woff") format("woff"), url("../../font/Bodyfriend-M.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodyfriend-L';
+  src: local(※), url("../../font/Bodyfriend-L.otf"), url("../../font/Bodyfriend-L.woff") format("woff"), url("../../font/Bodyfriend-L.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* abstracts */
+/* layout */
+.header {
+  padding: 40px 70px;
+  border-bottom: 1px solid #cecece;
+}
+
+.utils-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.utils-container .logo {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.utils-container .shortcut-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 8px;
+}
+
+.utils-container .shortcut-list .shortcut-item {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.navigation {
+  width: 90%;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.nav-list {
+  display: table;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-item {
+  padding-right: 70px;
+  display: table-cell;
+  height: 100%;
+}
+
+.nav-item .nav-depth-container {
+  display: none;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.nav-item:hover .nav-depth-container {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/*# sourceMappingURL=lg_b2b_clone.css.map */

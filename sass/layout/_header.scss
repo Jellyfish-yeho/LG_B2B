@@ -1,0 +1,52 @@
+.header {
+  padding: 40px 70px;
+  border-bottom: 1px solid #cecece;
+}
+
+.utils-container {
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    font: {
+      size: $title-font-size;
+      weight: 800;
+    }
+  }
+  .shortcut-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: (($title-font-size - $sub-font-size) / 2);
+    .shortcut-item {
+      margin-left: 20px;
+      font-size: $sub-font-size;
+    }
+  }
+}
+.navigation {
+  width: 90%;
+  margin-top: 30px;
+  font-weight: 600;
+  
+}
+.nav-list {
+  display: table;
+  flex-direction: row;
+  justify-content: start;
+  box-sizing: border-box;
+}
+.nav-item{
+  padding-right: 70px;
+  display: table-cell;
+  height: 100%;
+  .nav-depth-container{
+    display: none;
+  }
+  &:hover{
+    text-decoration: underline;
+    .nav-depth-container{
+      display: block;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
